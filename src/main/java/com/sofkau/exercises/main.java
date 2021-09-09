@@ -14,6 +14,7 @@ public class main {
         Four_product_iva four_product_iva = new Four_product_iva();
         Five_odd_even five_odd_even = new Five_odd_even();
         Six_odd_even_for six_odd_even_for = new Six_odd_even_for();
+        Seven_int_numbers seven_int_numbers = new Seven_int_numbers();
 
 
         while(!salir){
@@ -24,7 +25,7 @@ public class main {
                     "4) Calcular el precio de un producto + iva \n" +
                     "5) Mostrar números pares e impares (While) \n" +
                     "6) Mostrar números pares e impares (For) \n" +
-                    "7) Mostrar números pares e impares (do while) \n" +
+                    "7) Mostrar números positivos (do while) \n" +
                     "19) salir\n" +
                     "");
 
@@ -36,7 +37,7 @@ public class main {
                 case "4": four_product_iva.calculate_iva();
                 case "5": five_odd_even.find_odd_even();
                 case "6": six_odd_even_for.find_odd_even();
-                case "7":
+                case "7": seven_int_numbers.int_numbers();
                 case "19": salir = true;
 
             }
