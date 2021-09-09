@@ -16,6 +16,7 @@ public class Six_odd_even_for {
                 odd.add(i);
             }
         }
+        System.out.println("Este programa muestra los números pares e impares del 1 al 100:");
         System.out.println("Los números pares entre el 1 al 100 son: ");
         System.out.println(even);
         System.out.println("Los números imapres entre el 1 al 100 son: ");
