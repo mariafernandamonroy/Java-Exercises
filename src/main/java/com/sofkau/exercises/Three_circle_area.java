@@ -2,7 +2,7 @@ package com.sofkau.exercises;
 
 import java.util.Scanner;
 
-public class Three_circle_radius {
+public class Three_circle_area {
 
     public void calculate_radius(){
 
