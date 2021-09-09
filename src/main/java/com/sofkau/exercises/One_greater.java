@@ -10,7 +10,8 @@ public class One_greater {
     public void isGreater(){
         for(Double num1 : list){
             for(Double num2 : list) {
-
+                System.out.println("En este ejercicio se calcula si un número es" +
+                        "mayor o igual que el otro.");
                 System.out.println("Siendo el numero 1= " + num1 + "  y el numero 2= " + num2);
                 if (num1 > num2) {
                     System.out.println("el número 1 es mayor al número 2");

@@ -13,6 +13,8 @@ public class Two_num_comparison {
         double num1;
         double num2;
         Scanner scanner = new Scanner(System.in);
+        System.out.println("En este ejercicio se piden dos número para calcular si un número es" +
+                "mayor, menor o igual que el otro.");
         System.out.print("Por favor ingrese los dos números a comparar, separados por coma (numero 1,numero 2): \n" +
                 " ");
         numbers = scanner.next();

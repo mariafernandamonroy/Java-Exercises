@@ -15,7 +15,8 @@ public class main {
         while(!salir){
             System.out.print("Ingrese el número del ejercicio que desea probar: : \n" +
                     "1) Mayor qué \n" +
-                    "2) Comparación entre números (mayor,menor o igual)\n" +
+                    "2) Comparación entre números (mayor,menor o igual) \n" +
+                    "3) Calcular el área de un círculo \n" +
                     "19) salir\n" +
                     "");
 
