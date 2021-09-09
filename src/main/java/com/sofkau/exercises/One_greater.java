@@ -2,9 +2,8 @@ package com.sofkau.exercises;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
-public class One_num_comparison {
+public class One_greater {
     Double[] array = {2.0, 5555.55, 829.22};
     ArrayList<Double> list = new ArrayList<Double>(Arrays.asList(array));
 
