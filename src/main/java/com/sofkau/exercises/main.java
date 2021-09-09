@@ -18,6 +18,7 @@ public class main {
                     "1) Mayor qué \n" +
                     "2) Comparación entre números (mayor,menor o igual) \n" +
                     "3) Calcular el área de un círculo \n" +
+                    "4) Calcular el precio de un producto + iva \n" +
                     "19) salir\n" +
                     "");
 
