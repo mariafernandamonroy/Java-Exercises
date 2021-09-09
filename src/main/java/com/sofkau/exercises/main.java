@@ -15,7 +15,7 @@ public class main {
         Five_odd_even five_odd_even = new Five_odd_even();
         Six_odd_even_for six_odd_even_for = new Six_odd_even_for();
         Seven_int_numbers seven_int_numbers = new Seven_int_numbers();
-
+        Eight_days eight_days = new Eight_days();
 
         while(!salir){
             System.out.print("Ingrese el número del ejercicio que desea probar: : \n" +
@@ -26,6 +26,7 @@ public class main {
                     "5) Mostrar números pares e impares (While) \n" +
                     "6) Mostrar números pares e impares (For) \n" +
                     "7) Mostrar números positivos (do while) \n" +
+                    "8) ¿Días laborales? \n" +
                     "19) salir\n" +
                     "");
 
@@ -38,6 +39,7 @@ public class main {
                 case "5": five_odd_even.find_odd_even();
                 case "6": six_odd_even_for.find_odd_even();
                 case "7": seven_int_numbers.int_numbers();
+                case "8": eight_days.is_workday();
                 case "19": salir = true;
 
             }
