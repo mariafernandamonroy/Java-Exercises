@@ -72,4 +72,23 @@ public class Persona {
     public void setAltura(double altura) {
         this.altura = altura;
     }
+    public double calculate_IMC(){
+
+        double imc;
+        double result = 0;
+        double low_imc = -1;
+        double adecuate_imc = 0;
+        double high_imc = 1;
+        double low_limit_imc = 20;
+        double high_limit_imc = 25;
+        imc = getPeso() / getAltura();
+        if(imc < low_limit_imc){
+            result = low_imc;
+        }else if(imc >= low_limit_imc && imc <= high_limit_imc ){
+            result = adecuate_imc;
+        }else if(imc > high_limit_imc ){
+            result = high_imc;
+        }
+        return result;
+    }
 }
