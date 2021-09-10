@@ -16,6 +16,7 @@ public class main {
         Six_odd_even_for six_odd_even_for = new Six_odd_even_for();
         Seven_int_numbers seven_int_numbers = new Seven_int_numbers();
         Eight_days eight_days = new Eight_days();
+        Nine_replace_string nine_replace_string = new Nine_replace_string();
 
         while(!salir){
             System.out.print("Ingrese el número del ejercicio que desea probar: : \n" +
@@ -26,21 +27,25 @@ public class main {
                     "5) Mostrar números pares e impares (While) \n" +
                     "6) Mostrar números pares e impares (For) \n" +
                     "7) Mostrar números positivos (do while) \n" +
-                    "8) ¿Días laborales? \n" +
+                    "8) ¿Días laborales? (switch case) \n" +
+                    "9) Remplazar y concatenar una cadena \n" +
                     "19) salir\n" +
                     "");
 
             String exercise = scanner.next();
             switch (exercise){
-                case "1": one_greater.isGreater();
-                case "2": two_num_comparison.comparison();
-                case "3": three_circle_area.calculate_radius();
-                case "4": four_product_iva.calculate_iva();
-                case "5": five_odd_even.find_odd_even();
-                case "6": six_odd_even_for.find_odd_even();
-                case "7": seven_int_numbers.int_numbers();
-                case "8": eight_days.is_workday();
-                case "19": salir = true;
+                case "1": one_greater.isGreater(); break;
+                case "2": two_num_comparison.comparison(); break;
+                case "3": three_circle_area.calculate_radius(); break;
+                case "4": four_product_iva.calculate_iva(); break;
+                case "5": five_odd_even.find_odd_even(); break;
+                case "6": six_odd_even_for.find_odd_even(); break;
+                case "7": seven_int_numbers.int_numbers(); break;
+                case "8": eight_days.is_workday(); break;
+                case "9": nine_replace_string.replace_concat_string(); break;
+                case "19": salir = true;  break;
+                default:
+                    System.out.println("Selección inválida, intente nuevamente");
 
             }
         }
