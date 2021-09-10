@@ -1,11 +1,13 @@
 package com.sofkau.exercises;
 import Exercise16.*;
 
+import java.util.Scanner;
+
 public class Controller {
 
     Persona persona = new Persona("juan",25,"F",50,1.54);
 
-    public void excersice16_methods(){
+    public void excersice16_methods() {
 
         double imc;
         boolean legal_age;

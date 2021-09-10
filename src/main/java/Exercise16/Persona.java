@@ -19,6 +19,7 @@ public class Persona {
         this.sexo = check_sex(this.sexo);
         this.peso = 0;
         this.altura = 0;
+        generate_DNI();
     }
 
     public Persona(String nombre, int edad, String sexo){
@@ -27,6 +28,7 @@ public class Persona {
         this.sexo = sexo;
         this.peso = 0;
         this.altura = 0;
+        generate_DNI();
     }
 
     public Persona(String nombre, int edad, String sexo, double peso, double altura){
@@ -35,6 +37,7 @@ public class Persona {
         this.sexo = sexo;
         this.peso = peso;
         this.altura = altura;
+        generate_DNI();
     }
 
     public String getNombre() {
@@ -125,18 +128,18 @@ public class Persona {
                     ", edad: " + edad +
                     ", peso: " + peso +
                     ", altura: " + altura +
-                    ", sexo: " + sexo + "}";
+                    ", sexo: " + sexo +
+                    ", DNI: "+ dni + "}";
         return object;
     }
-    public String generate_DNI(){
+    public void generate_DNI(){
 
         int dni;
         int remainder;
         int divident = 23;
-        dni =  (int) (10000000 * Math.random());
+        dni =  (int) (100000000 * Math.random());
         remainder = dni % divident;
-        this.dni =dni+"-"+LETRAS_DNI.get(remainder);
-
+        this.dni =dni + "-"+LETRAS_DNI.get(remainder);
 
     }
 }
