@@ -32,7 +32,7 @@ public class main {
                     "8) ¿Días laborales? (switch case) \n" +
                     "9) Remplazar y concatenar cadenas de texto \n" +
                     "10) Eliminar espacios en una cadena de texto \n" +
-                    "11) Contar la cantidad de carácteres y vocales en un string \n" +
+                    "11) Contar la cantidad de carácteres y vocales en una cadena de texto \n" +
                     "19) salir\n" +
                     "");
 
