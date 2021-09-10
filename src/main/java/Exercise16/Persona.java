@@ -9,7 +9,7 @@ public class Persona {
     private String nombre = "";
     private int edad = 0;
     private String dni;
-    private String sexo;
+    private String sexo = "M";
     private double peso = 0;
     private double altura = 0;
 
