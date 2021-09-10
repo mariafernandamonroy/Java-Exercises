@@ -18,19 +18,19 @@ public class Electrodomestico {
 
 
     public Electrodomestico(){
-        this.energy_demand = energy_default;
+        this.energy_demand = check_energy_demand(this.energy_demand);
         this.base_price = price_default;
         this.color = color_default;
         this.weight = weight_default;
     }
     public Electrodomestico(double base_price, double weight){
-        this.energy_demand = energy_default;
+        this.energy_demand = check_energy_demand(this.energy_demand);
         this.base_price = base_price;
         this.color = color_default;
         this.weight = weight;
     }
     public Electrodomestico(char energy_demand, double base_price, String color, double weight){
-        this.energy_demand = energy_demand;
+        this.energy_demand = check_energy_demand(energy_demand);
         this.base_price = base_price;
         this.color = color;
         this.weight = weight;
@@ -51,5 +51,13 @@ public class Electrodomestico {
     public double getWeight() {
         return weight;
     }
+    private char check_energy_demand(char demand){
 
+        char s = energy_demand;
+        if('A' == demand || 'B' == demand || 'C' == demand || 'D' == demand || 'F' == demand ){
+            s = demand;
+        }
+
+        return s;
+    }
 }
