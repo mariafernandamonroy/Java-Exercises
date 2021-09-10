@@ -36,29 +36,20 @@ public class Electrodomestico {
         this.weight = weight;
     }
 
-    public double getBase_price() {
-        return base_price;
+    public char getEnergy_demand() {
+        return energy_demand;
     }
 
-    public void setBase_price(double base_price) {
-        this.base_price = base_price;
+    public double getBase_price() {
+        return base_price;
     }
 
     public String getColor() {
         return color;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
     public double getWeight() {
         return weight;
     }
-
-    public void setWeight(double weight) {
-        this.weight = weight;
-    }
-
 
 }
