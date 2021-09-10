@@ -88,7 +88,7 @@ public class Persona {
         double high_imc = 1;
         double low_limit_imc = 20;
         double high_limit_imc = 25;
-        imc = getPeso() / getAltura();
+        imc = getPeso() / Math.pow(getAltura(),2);
         if(imc < low_limit_imc){
             result = low_imc;
         }else if(imc >= low_limit_imc && imc <= high_limit_imc ){
