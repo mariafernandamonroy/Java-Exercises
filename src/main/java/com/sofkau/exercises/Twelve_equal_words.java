@@ -1,5 +1,6 @@
 package com.sofkau.exercises;
 
+import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -32,28 +33,31 @@ public class Twelve_equal_words {
         int word1_length;
         int word2_length;
         int length = 0;
-        String string_letter_word1;
-        String string_letter_word2;
-        String new_word1 = "";
-        String new_word2 = "";
+        char[] word1_list = word1.toCharArray();
+        char[] word2_list = word2.toCharArray();
+        ArrayList<String> new_word1 = new ArrayList<String>();
+        ArrayList<String> new_word2 = new ArrayList<String>();
         word1_length = word1.length();
         word2_length = word2.length();
+        String diferences = "";
 
         if(word1_length >= word2_length){length = word1_length;}
         else if (word2_length > word1_length){length = word2_length;}
 
         for(int letter = 0; letter < length; letter++){
-            if( word1.charAt(letter) != word2.charAt(letter)){
-                string_letter_word1 = Character.toString(word1.charAt(letter));
-                new_word1 = word1.replace(string_letter_word1,"(" + word1.charAt(letter) + ")");
-                System.out.println("word1:" + new_word1);
-                string_letter_word2 = Character.toString(word2.charAt(letter));
-                new_word2 = word2.replace(string_letter_word2,"(" + word2.charAt(letter) + ")");
-                System.out.println("word2:" + new_word2);
+
+            if(word1_list[letter] != word2_list[letter]){
+                new_word1.add("(" + word1_list[letter] + ")");
+                new_word2.add("(" + word2_list[letter] + ")");
+            }else{
+                new_word1.add(Character.toString(word1_list[letter]));
+                new_word2.add(Character.toString(word2_list[letter]));
             }
         }
+        word1 =  String.join("",new_word1);
+        word2 =  String.join("",new_word2);
 
-        String diferences = new_word1.concat("," + new_word2);
+        diferences = word1.concat("," + word2);
         return diferences;
     }
 }
