@@ -5,8 +5,6 @@ import java.util.Scanner;
 
 public class Controller_ex_16 {
 
-
-
     public void excersice16_methods() {
 
         class error extends Exception{

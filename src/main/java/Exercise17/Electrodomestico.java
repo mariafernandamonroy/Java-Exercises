@@ -70,4 +70,43 @@ public class Electrodomestico {
         }
         return color;
     }
+    public double final_price() {
+        switch (this.energy_demand) {
+            case 'A': {
+                this.base_price += 100;
+                break;
+            }
+            case 'B': {
+                this.base_price += 80;
+                break;
+            }
+            case 'C': {
+                this.base_price += 60;
+                break;
+            }
+            case 'D': {
+                this.base_price += 50;
+                break;
+            }
+            case 'E': {
+                this.base_price += 30;
+                break;
+            }
+            case 'F': {
+                this.base_price += 10;
+                break;
+            }
+        }
+        if(this.weight >= 0 && this.weight < 19){
+            this.base_price += 10;
+        }else if(this.weight >= 20 && this.weight < 49){
+            this.base_price += 50;
+        }else if(this.weight >= 50 && this.weight < 79){
+            this.base_price += 80;
+        }else if(this.weight >= 80){
+            this.base_price += 100;
+        }
+
+        return this.base_price;
+    }
 }
