@@ -19,6 +19,7 @@ public class main {
         Nine_replace_string nine_replace_string = new Nine_replace_string();
         Ten_delete_string_spaces ten_delete_string_spaces = new Ten_delete_string_spaces();
         Eleven_string_length eleven_string_length = new Eleven_string_length();
+        Twelve_equal_words twelve_equal_words = new Twelve_equal_words();
 
         while(!salir){
             System.out.print("Ingrese el número del ejercicio que desea probar: : \n" +
@@ -33,6 +34,7 @@ public class main {
                     "9) Remplazar y concatenar cadenas de texto \n" +
                     "10) Eliminar espacios en una cadena de texto \n" +
                     "11) Contar la cantidad de carácteres y vocales en una cadena de texto \n" +
+                    "12) ¿Palabras iguales? \n" +
                     "19) salir\n" +
                     "");
 
@@ -49,6 +51,7 @@ public class main {
                 case "9": nine_replace_string.replace_concat_string(); break;
                 case "10": ten_delete_string_spaces.delete_string_spaces(); break;
                 case "11": eleven_string_length.string_length(); break;
+                case "12": twelve_equal_words.equal_words(); break;
                 case "19": salir = true;  break;
                 default:
                     System.out.println("Selección inválida, intente nuevamente");
