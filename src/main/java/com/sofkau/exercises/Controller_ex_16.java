@@ -1,10 +1,9 @@
 package com.sofkau.exercises;
 import Exercise16.*;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Controller {
+public class Controller_ex_16 {
 
 
 
@@ -22,8 +21,6 @@ public class Controller {
         int age;
         double weight;
         double height;
-        String input_string;
-        String input[];
         double imc;
         boolean legal_age;
         Persona persons[] = new Persona[3];
@@ -102,8 +99,6 @@ public class Controller {
             }
             System.out.println(persons[i].toString());
         }
-
-
     }
 }
 

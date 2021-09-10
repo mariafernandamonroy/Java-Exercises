@@ -9,7 +9,7 @@ public class Four_product_iva {
         double price;
         double tax;
         double final_price;
-        double iva = 0.21;
+        final double iva = 0.21;
         String price_string;
         Scanner scanner = new Scanner(System.in);
         System.out.println("En este ejercicio se calcula el IVA del precio neto de un producto");

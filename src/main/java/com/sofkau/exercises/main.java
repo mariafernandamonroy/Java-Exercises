@@ -23,7 +23,8 @@ public class main {
         Thirteen_date_time thirteen_date_time = new Thirteen_date_time();
         Fourteen_number_sequence fourteen_number_sequence = new Fourteen_number_sequence();
         Fifteen_menu fifteen_menu = new Fifteen_menu();
-        Controller controller = new Controller();
+        Controller_ex_16 controllerEx16 = new Controller_ex_16();
+        Controller_ex_17 controller_ex_17 = new Controller_ex_17();
 
         while(!salir){
             System.out.print("Ingrese el número del ejercicio que desea probar: : \n" +
@@ -43,6 +44,7 @@ public class main {
                     "14) Secuencia de números \n" +
                     "15) Mostrar un menú \n" +
                     "16) Persona \n" +
+                    "17) Electrodoméstico \n" +
                     "19) salir\n" +
                     "");
 
@@ -63,7 +65,8 @@ public class main {
                 case "13": thirteen_date_time.date_time_actual(); break;
                 case "14": fourteen_number_sequence.number_sequence(); break;
                 case "15": fifteen_menu.show_menu(); break;
-                case "16": controller.excersice16_methods(); break;
+                case "16": controllerEx16.excersice16_methods(); break;
+                case "17": controller_ex_17.excersice17_methods(); break;
                 case "19": salir = true;  break;
                 default:
                     System.out.println("Selección inválida, intente nuevamente");
