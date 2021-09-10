@@ -3,16 +3,17 @@ import Exercise16.*;
 
 public class Controller {
 
+    Persona persona = new Persona("juan",25,"H",50,1.54);
+
     public void excersice16_methods(){
+
         double imc;
-        imc = calculate_imc(10, 1.50);
+        boolean legal_age;
+        imc = persona.calculate_IMC();
         System.out.println("El IMC es: " + imc);
-    }
-    public double calculate_imc( double peso, double altura){
-        double result_imc;
-        Persona persona = new Persona("juan",25,"H",peso,altura);
-        result_imc = persona.calculate_IMC();
-        return result_imc;
+        legal_age = persona.is_legal_age();
+        System.out.println("Es legal la edad?:" + legal_age);
+
     }
 
 

@@ -92,5 +92,17 @@ public class Persona {
 
         return result;
     }
+    public boolean is_legal_age(){
 
+        boolean result = false;
+        double legel_age = 18;
+        double age = getEdad();
+        if(age >= legel_age){
+            result = true;
+        }else if(age < legel_age) {
+            result = false;
+        }
+
+        return result;
+    }
 }
