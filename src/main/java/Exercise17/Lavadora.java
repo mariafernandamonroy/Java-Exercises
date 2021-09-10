@@ -18,4 +18,15 @@ public class Lavadora extends Electrodomestico{
         this.charge = charge;
     }
 
+    public double getCharge() {
+        return charge;
+    }
+    public double final_price(){
+        double price;
+        price = super.final_price();
+        if(this.charge > 30){
+            price += 50;
+        }
+        return price;
+    }
 }
