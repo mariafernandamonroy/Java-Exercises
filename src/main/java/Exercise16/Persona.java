@@ -1,7 +1,11 @@
 package Exercise16;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Persona {
 
+    static final List<String> LETRAS_DNI= Arrays.asList("T","R","W","A","G","M","Y","F","P","D","X","B","N","J","Z","S","Q","V","H","L","C","K","E");
     private String nombre = "";
     private int edad = 0;
     private String dni;
@@ -115,13 +119,24 @@ public class Persona {
         return default_sex;
     }
     public String toString(){
-        String objetc;
-        objetc = "Persona{" +
-                    "nombre: "+ nombre +
+
+        String object;
+        object = "Persona{" + "nombre: "+ nombre +
                     ", edad: " + edad +
                     ", peso: " + peso +
                     ", altura: " + altura +
                     ", sexo: " + sexo + "}";
-        return objetc;
+        return object;
+    }
+    public String generate_DNI(){
+
+        int dni;
+        int remainder;
+        int divident = 23;
+        dni =  (int) (10000000 * Math.random());
+        remainder = dni % divident;
+        this.dni =dni+"-"+LETRAS_DNI.get(remainder);
+
+
     }
 }
