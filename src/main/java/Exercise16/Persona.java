@@ -5,14 +5,14 @@ public class Persona {
     private String nombre = "";
     private int edad = 0;
     private String dni;
-    private String sexo = "H";
+    private String sexo;
     private double peso = 0;
     private double altura = 0;
 
     public Persona(){
         this.nombre = "";
         this.edad = 0;
-        this.sexo = "H";
+        this.sexo = check_sex(this.sexo);
         this.peso = 0;
         this.altura = 0;
     }
@@ -104,5 +104,24 @@ public class Persona {
         }
 
         return result;
+    }
+    private String check_sex(String sex){
+
+        String default_sex = getSexo();
+        if(sex.equalsIgnoreCase("F")){
+            default_sex = "F";
+        }
+
+        return default_sex;
+    }
+    public String toString(){
+        String objetc;
+        objetc = "Persona{" +
+                    "nombre: "+ nombre +
+                    ", edad: " + edad +
+                    ", peso: " + peso +
+                    ", altura: " + altura +
+                    ", sexo: " + sexo + "}";
+        return objetc;
     }
 }

@@ -42,7 +42,7 @@ public class main {
                     "13) Consultar fecha y hora actual \n" +
                     "14) Secuencia de números \n" +
                     "15) Mostrar un menú \n" +
-                    "16) Calcular imc \n" +
+                    "16) Persona \n" +
                     "19) salir\n" +
                     "");
 
