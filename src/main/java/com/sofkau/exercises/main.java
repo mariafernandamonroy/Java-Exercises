@@ -18,6 +18,7 @@ public class main {
         Eight_days eight_days = new Eight_days();
         Nine_replace_string nine_replace_string = new Nine_replace_string();
         Ten_delete_string_spaces ten_delete_string_spaces = new Ten_delete_string_spaces();
+        Eleven_string_length eleven_string_length = new Eleven_string_length();
 
         while(!salir){
             System.out.print("Ingrese el número del ejercicio que desea probar: : \n" +
@@ -31,6 +32,7 @@ public class main {
                     "8) ¿Días laborales? (switch case) \n" +
                     "9) Remplazar y concatenar cadenas de texto \n" +
                     "10) Eliminar espacios en una cadena de texto \n" +
+                    "11) Contar la cantidad de carácteres y vocales en un string \n" +
                     "19) salir\n" +
                     "");
 
@@ -46,6 +48,7 @@ public class main {
                 case "8": eight_days.is_workday(); break;
                 case "9": nine_replace_string.replace_concat_string(); break;
                 case "10": ten_delete_string_spaces.delete_string_spaces(); break;
+                case "11": eleven_string_length.string_length(); break;
                 case "19": salir = true;  break;
                 default:
                     System.out.println("Selección inválida, intente nuevamente");

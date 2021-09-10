@@ -11,6 +11,8 @@ public class Ten_delete_string_spaces {
         System.out.println("Escriba una frase: \n" +
                 " " );
         phrase = scanner.nextLine();
+        phrase = phrase.replace(" ","");
+        System.out.println("Su frase sin espacios es: " + phrase);
 
     }
 }
