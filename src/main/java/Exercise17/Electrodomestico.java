@@ -5,8 +5,6 @@ import java.util.List;
 
 public class Electrodomestico {
 
-//    static final List<String> energy_demand = Arrays.asList("A","B","C","D","E","F");
-    //            Arrays.asList("blanco"," negro", "rojo", "azul", "gris");
     static final String color_default = "blanco";
     static final double price_default = 100;
     static final int weight_default = 5;
@@ -20,19 +18,19 @@ public class Electrodomestico {
     public Electrodomestico(){
         this.energy_demand = check_energy_demand(this.energy_demand);
         this.base_price = price_default;
-        this.color = color_default;
+        this.color = check_color(this.color);
         this.weight = weight_default;
     }
     public Electrodomestico(double base_price, double weight){
         this.energy_demand = check_energy_demand(this.energy_demand);
         this.base_price = base_price;
-        this.color = color_default;
+        this.color = check_color(this.color);
         this.weight = weight;
     }
     public Electrodomestico(char energy_demand, double base_price, String color, double weight){
         this.energy_demand = check_energy_demand(energy_demand);
         this.base_price = base_price;
-        this.color = color;
+        this.color = check_color(color);
         this.weight = weight;
     }
 
@@ -59,5 +57,17 @@ public class Electrodomestico {
         }
 
         return s;
+    }
+    private String check_color(String color_input){
+        String color = color_default;
+        if("blanco".equalsIgnoreCase(color_input) ||
+            "negro".equalsIgnoreCase(color_input) ||
+            "rojo".equalsIgnoreCase(color_input) ||
+            "azul".equalsIgnoreCase(color_input) ||
+            "gris".equalsIgnoreCase(color_input))
+        {
+            color = color_input;
+        }
+        return color;
     }
 }
