@@ -6,7 +6,7 @@ public class Persona {
     private int edad = 0;
     private String dni;
     private String sexo = "H";
-    private int peso = 0;
+    private double peso = 0;
     private double altura = 0;
 
     public Persona(){
@@ -25,7 +25,7 @@ public class Persona {
         this.altura = 0;
     }
 
-    public Persona(String nombre, int edad, String sexo, int peso, int altura){
+    public Persona(String nombre, int edad, String sexo, double peso, double altura){
         this.nombre = nombre;
         this.edad = edad;
         this.sexo = sexo;
@@ -57,7 +57,7 @@ public class Persona {
         this.sexo = sexo;
     }
 
-    public int getPeso() {
+    public double getPeso() {
         return peso;
     }
 
@@ -77,7 +77,7 @@ public class Persona {
         double imc;
         double result = 0;
         double low_imc = -1;
-        double adecuate_imc = 0;
+        double adequate_imc = 0;
         double high_imc = 1;
         double low_limit_imc = 20;
         double high_limit_imc = 25;
@@ -85,10 +85,12 @@ public class Persona {
         if(imc < low_limit_imc){
             result = low_imc;
         }else if(imc >= low_limit_imc && imc <= high_limit_imc ){
-            result = adecuate_imc;
+            result = adequate_imc;
         }else if(imc > high_limit_imc ){
             result = high_imc;
         }
+
         return result;
     }
+
 }
